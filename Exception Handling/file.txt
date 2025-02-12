@@ -1,0 +1,8 @@
+@ NullPointer exception = when we try to access or modify field or object that is null@
+@ NumberFormatException = this exception occur when we try to convert string into number format 
+  if String s="abc" =>error/exception
+  if string s="123" => will execute
+
+@ (Exception e) => It is super class exception it can handle all types of exception.
+
+@ if there are three exception in one try block and if exception occurs in the first one thene two exceptions below will will not execute as it will come out of try block.
