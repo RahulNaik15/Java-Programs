@@ -6,3 +6,15 @@
 @ (Exception e) => It is super class exception it can handle all types of exception.
 
 @ if there are three exception in one try block and if exception occurs in the first one thene two exceptions below will will not execute as it will come out of try block.
+
+@ throw keyword is used to create object of exception and throw the exception to jvm
+
+@ if there is exception in program and is not handled by try-catch then the main method creates the exception object and passes it to jvm but in case of 
+  throw keyword the programmer creates the exception object and passes it to jvm.
+  throw keyword is mainly used for user defined/custom exception.
+  throw keyword is only used to create exception object but it cannot handle exception to handle it we have to use try catch block.
+
+@ throws keyword main give the information to caller method that the exception can occur so that the caller method can handle the exception
+  It is used along with method
+  e.g void readfile() throws FileNotFoundException
+  throws keyword is only used to indicate exception can happen but it cannot handle exception to handle it we have to use try catch block.

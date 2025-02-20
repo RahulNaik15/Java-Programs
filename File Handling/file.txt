@@ -1,0 +1,24 @@
+stream => stream is squenece of data. all the classes in IO package can be divided in two stream byte and character
+
+file handling methods:
+
+canRead(), canWrite() => return boolean value based of we can read or write the file
+createNewFile() => creates new file
+Delete() => deletes file
+Exists() => check if file exist or not
+length()
+getName() =>get file name
+getAbsolutePath() => return path of file
+Read(), Write() => can read or write file
+renameTo() => rename file
+
+file handling classes:
+
+file
+fileReader
+fileWriter
+fileInputStream
+fileOutputStream
+BufferedInputStream
+BufferedOutputStream
+
