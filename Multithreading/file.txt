@@ -1,0 +1,32 @@
+multithreading=> In multithreading multiple threads are running simultaneously without dependening on each other. It is a single program
+
+multitasking=> In multitasking multiple process are running simultaneously but if there are multiple sub process in main process then it is dependent on other process to complete.
+e.g if music player and microsoft office is running simultaneously then second music will play after first music is completed and word will run after excel is complete.
+
+thread => thread is a pre-defined class in java.lang package. It is basic unit of cpu and it is well known for independent execution.
+
+By implementing runnable interface => in the Runnable class there is only one menthod i.e run().
+we cannot start the thread using t.Start() method like Thread class because it has only one method.
+to strat the thread we have to create the object of Thread class because to start thread we need Start() method and it is present in Thread class.
+But when we create Thread object and start the thread it will call the run() method present in it but we want to execute the run method of class A so we pass the object reference of that class in the Thread object
+e.g 
+A r=new A();
+Thread t=new Thread(r);
+t.start();
+
+Thread scheduler => It is part of processor which execute multiple threads randomly. It is scheduler which decides which thread will execute at which time
+
+Thread class has setName() => set name of thread, currentThread() => It gives cureent thread, getName() => return the name we have set. 
+
+
+Thread Life Cycle:
+
+1) Born state / New state => When we create thread it is in born state
+2) Ready state / Runnable state => when we start thread using t.start() it goes in ready state
+3) Running state / Execution state=> When thread scheduler select the thread it is in running state
+4) Blocked state / Waiting state=> When thread is running if any of the following method runs t.sleep(), t.join, t.suspend(), t.wait() then it goes in blocked state after this again it moves to ready and running state
+5) Dead state / Exit state=> When the thread runs successfully then it moves to dead state
+
+
+sleep() => It is used to put thread in temporary waiting state
+join( )=> It is used to put parent thread in temporary waiting state till the completion of child thread
