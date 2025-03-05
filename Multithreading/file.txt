@@ -30,3 +30,9 @@ Thread Life Cycle:
 
 sleep() => It is used to put thread in temporary waiting state
 join( )=> It is used to put parent thread in temporary waiting state till the completion of child thread
+suspend() => suspend puts the thread from running state to waiting state
+resume() => It resume the suspended thread from waiting state to runnable state
+yield() => This method allows to run another thread with same priority by pausing its current thread
+e.g If there are three thread t1,t2,t3 and if t2.yield() is used then t2 will wait and t1 and t3 will run first 
+stop() => It is used to terminate any thread permanently
+isAlive() => Method used to check whether thread is alive or not if alive return true else false. we have to write isalive after the start method otherwise it will give false
