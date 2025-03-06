@@ -36,3 +36,9 @@ yield() => This method allows to run another thread with same priority by pausin
 e.g If there are three thread t1,t2,t3 and if t2.yield() is used then t2 will wait and t1 and t3 will run first 
 stop() => It is used to terminate any thread permanently
 isAlive() => Method used to check whether thread is alive or not if alive return true else false. we have to write isalive after the start method otherwise it will give false
+
+Thread priority => It is used to set the priority of thread. if priority of thread is not set then JVM set default priority 5
+There are 3 predefined final static variable provided by Thread class
+Thread.MIN_PRIORITY =>1
+Thread.NORM_PRIORITY =>5
+Thread.MAX_PRIORITY =>10
