@@ -42,3 +42,20 @@ There are 3 predefined final static variable provided by Thread class
 Thread.MIN_PRIORITY =>1
 Thread.NORM_PRIORITY =>5
 Thread.MAX_PRIORITY =>10
+
+Synchronization => It is process by using we control the accessability of multiple threads accessing common resources
+e.g
+In a movie ticket booking system, assume there are a total of 10 seats available. If multiple users try to book tickets at the same time, data inconsistency can occur due to race conditions when multiple threads access the same resource simultaneously.
+Example of Data Inconsistency (Without Synchronization)
+Consider two threads:
+Thread 1 tries to book 7 seats
+Thread 2 tries to book 6 seats
+If both threads run concurrently without synchronization:
+Thread 1 checks available seats (10 seats) → Books 7 seats → 3 seats remaining
+Thread 2 checks available seats (also sees 10 seats, due to delay in updating shared data) → Books 6 seats
+Since only 3 seats were actually available, but Thread 2 still books 6 seats, the system now shows negative seats (-3), causing data inconsistency.
+
+Synchronization in thread can be achieved by three ways:
+synchronized method => If we use synchronized keyword before any menthod then that method become synchronized method
+synchronized blocked
+static synchronization
